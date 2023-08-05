@@ -26,7 +26,7 @@
 }
 .brand-name:hover{
     transform: scale(1.05);
-    text-shadow: 0 2px 5px #efefef;
+    text-shadow: 0 2px 2px #efefef;
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     -ms-transform: scale(1.05);
@@ -52,7 +52,7 @@
 }
 .navigation-menu li:hover{
     transform: scale(1.05);
-    text-shadow: 2px 2px 5px #efefef;
+    text-shadow: 0 1px 2px #efefef;
 }
 .active{
     font-weight: 600;
