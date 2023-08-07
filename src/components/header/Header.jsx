@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className="navigation">
       <a href="/" className="brand-name">
-        Tech-Society IIIT-Bh
+        Tech Society IIIT-Bh
       </a>
       <button
         className="hamburger"

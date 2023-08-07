@@ -1,10 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@600&family=Tektur:wght@600&display=swap');
+
 .hero{
     background: url("../../assets/herobg.jpg");
     background-size: cover;
-    height: 90vh;
+    min-height: 70vh;
 }
 .hero2{
-    background: rgba(0,0,0,0.8);
+    background: #000927e6;
     display: flex;
-    height: 90vh;
+    justify-content: center;
+    min-height: 70vh;
+}
+.hero-text{
+    width: 35%;
+    margin: auto 1rem;
+}
+.hero-text>h2{
+    font-size: 72px;
+    margin: 2px 0;
+    font-family: 'Tektur', cursive;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.hero-text>h4,.hero-text>h6{
+    margin: 2px 0;
+    font-family: 'Big Shoulders Inline Text', cursive;
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 1.8px;
+}
+.hero-text>p{
+    color: #cdcdcd;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+.home-text{
+    margin: 1.8rem 3.5rem;
+}
+.home-text h3,.home-slider h3{
+    font-family: 'Tektur', cursive;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin: 16px 0;
+    margin-left: 1rem;
+}
+.home-text hr{
+    width: 80%;
+}
+.about-text{
+    margin-top: 2.5rem;
+    margin-right: 1.5rem;
+}
+.about-text p, .director-text p{
+    margin-top: 1.5rem;
+    margin-right: 3rem;
+    margin-left: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: #cdcdcd;
+    letter-spacing: 1.2px;
+}
+.about, .director{
+    display: flex;
+}
+.director{
+    flex-direction: row-reverse;
+    margin-bottom: 2rem;
+}
+.director-text{
+    margin-top: 2.5rem;
+    margin-left: 1.5rem;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 40vw;
+    margin-top: 3rem;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #232852d0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 842px){
+    .hero2{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 2.5rem;
+    }
+    .hero-img{
+        width: 85%;
+        margin: 10px 1.6rem;
+    }
+    .hero-text{
+        width: 80%;
+    }
+    .home-text{
+        margin: 1rem;
+    }
+    .about, .director{
+        flex-direction: column;
+    }
+    .about-text,.director-text{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .home-text img{
+        width: 75%;
+        margin: 8px auto;
+    }
+    .swiper{
+        height: 50vh;
+    }
 }

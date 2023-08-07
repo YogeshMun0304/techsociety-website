@@ -6,7 +6,7 @@
     position: relative;
     padding: 0.8rem 0rem;
     background-color: #030f26;
-    background: linear-gradient(180deg, rgba(3, 15, 38, 1) 0%,rgba(3, 15, 38, 0.6) 75%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, rgba(3, 15, 38, 1) 0%,rgba(3, 15, 38, 0.073) 75%, rgba(255, 255, 255, 0) 100%);
     animation: slide-down 0.4s ease;
     -webkit-animation: slide-down 0.4s ease;
 }
@@ -17,6 +17,8 @@
 
 .brand-name {
     text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Tektur', cursive;
     color: #efefef;
     font-weight: 600;
     font-size: 2rem;
@@ -79,7 +81,7 @@
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 842px) {
     .brand-name{
         font-size: 1.6rem;
     }
@@ -94,7 +96,7 @@
         width: 100%;
         height: calc(100vh - 77px);
         display: none;
-        background-color: rgba(3,15,38,0.65);
+        background-color: rgba(3, 15, 38, 0.94);
     }
     .expanded ul {
         display: block;
