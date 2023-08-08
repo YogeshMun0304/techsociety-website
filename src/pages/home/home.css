@@ -14,6 +14,16 @@
 .hero-text{
     width: 35%;
     margin: auto 1rem;
+    animation: slide-from-right 1.5s 1 ease-in;
+    -webkit-animation: slide-from-right 1.5s 1 ease-in;
+}
+@keyframes slide-from-right {
+    from{
+        left:-500px;
+    }
+    to{
+        left: 0;
+    }
 }
 .hero-text>h2{
     font-size: 72px;
@@ -36,6 +46,22 @@
     font-weight: 300;
     font-family: 'Poppins', sans-serif;
 }
+.hero-img{
+    position: relative;
+    animation: float 2s infinite ease-in-out;
+    -webkit-animation: float 2s infinite ease-in-out;
+}
+@keyframes float {
+    0%{
+        top: 0;
+    }
+    50%{
+        top: -10px;
+    }
+    100%{
+        top: 0;
+    }
+}
 .home-text{
     margin: 1.8rem 3.5rem;
 }
@@ -44,7 +70,7 @@
     font-weight: 600;
     font-size: 2.5rem;
     margin: 16px 0;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 .home-text hr{
     width: 80%;
@@ -72,7 +98,6 @@
     margin-top: 2.5rem;
     margin-left: 1.5rem;
 }
-
 
 .swiper {
     width: 100%;
