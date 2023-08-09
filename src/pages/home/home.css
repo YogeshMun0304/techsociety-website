@@ -14,16 +14,6 @@
 .hero-text{
     width: 35%;
     margin: auto 1rem;
-    animation: slide-from-right 1.5s 1 ease-in;
-    -webkit-animation: slide-from-right 1.5s 1 ease-in;
-}
-@keyframes slide-from-right {
-    from{
-        left:-500px;
-    }
-    to{
-        left: 0;
-    }
 }
 .hero-text>h2{
     font-size: 72px;

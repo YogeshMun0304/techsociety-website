@@ -5,11 +5,17 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import heroimg from "../../assets/heroimg.png";
+import { motion } from "framer-motion";
 
 function Home() {
   return (
     <div className="home">
-      <div className="hero">
+      <motion.section
+        className="hero"
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, ease: "easeInOut" }}
+      >
         <div className="hero2">
           <div className="hero-text">
             <h4> Welcome to</h4>
@@ -26,9 +32,14 @@ function Home() {
             <img className="hero-img" src={heroimg} alt="hero-img" />
           </div>
         </div>
-      </div>
-      <div className="home-text">
-        <div className="about">
+      </motion.section>
+      <section className="home-text">
+        <motion.div
+          className="about"
+          initial={{ opacity: 0, scale: 0.5, x: -500 }}
+          whileInView={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+        >
           <div className="about-text">
             <h3>About</h3>
             <hr />
@@ -41,8 +52,13 @@ function Home() {
             </p>
           </div>
           <img src={heroimg} alt="about-img" />
-        </div>
-        <div className="director">
+        </motion.div>
+        <motion.div
+          className="director"
+          initial={{ opacity: 0, scale: 0.5, x: 500 }}
+          whileInView={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+        >
           <div className="director-text">
             <h3>From the Director</h3>
             <hr />
@@ -55,9 +71,14 @@ function Home() {
             </p>
           </div>
           <img src={heroimg} alt="director-img" />
-        </div>
-      </div>
-      <div className="home-slider">
+        </motion.div>
+      </section>
+      <motion.section
+        className="home-slider"
+        initial={{ opacity: 0, scale: 0.5, y: 100 }}
+        whileInView={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeInOut" }}
+      >
         <h3>Our Achievements</h3>
         <Swiper navigation={true} modules={[Navigation]}>
           <SwiperSlide>Slide 1</SwiperSlide>
@@ -65,7 +86,7 @@ function Home() {
           <SwiperSlide>Slide 3</SwiperSlide>
           <SwiperSlide>Slide 4</SwiperSlide>
         </Swiper>
-      </div>
+      </motion.section>
     </div>
   );
 }
