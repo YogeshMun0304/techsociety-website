@@ -10,14 +10,14 @@ import { motion } from "framer-motion";
 function Home() {
   return (
     <div className="home">
-      <motion.section
-        className="hero"
-        initial={{ opacity: 0, scale: 0 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6, ease: "easeInOut" }}
-      >
+      <section className="hero">
         <div className="hero2">
-          <div className="hero-text">
+          <motion.div
+            className="hero-text"
+            initial={{ opacity: 0, scale: 0, x: -100 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            transition={{ duration: 0.6, ease: "easeInOut" }}
+          >
             <h4> Welcome to</h4>
             <h2>Tech Society</h2>
             <h6> IIIT-Bhubaneswar</h6>
@@ -27,16 +27,20 @@ function Home() {
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam
             </p>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0, x: 100 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            transition={{ duration: 0.6, ease: "easeInOut" }}
+          >
             <img className="hero-img" src={heroimg} alt="hero-img" />
-          </div>
+          </motion.div>
         </div>
-      </motion.section>
+      </section>
       <section className="home-text">
         <motion.div
           className="about"
-          initial={{ opacity: 0, scale: 0.5, x: -500 }}
+          initial={{ opacity: 0, scale: 0.5, x: -100 }}
           whileInView={{ opacity: 1, scale: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
         >
@@ -55,7 +59,7 @@ function Home() {
         </motion.div>
         <motion.div
           className="director"
-          initial={{ opacity: 0, scale: 0.5, x: 500 }}
+          initial={{ opacity: 0, scale: 0.5, x: 100 }}
           whileInView={{ opacity: 1, scale: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
         >
