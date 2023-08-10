@@ -31,13 +31,10 @@ h2{
     -o-transition: all 0.6s ease;
 }
 .event-card:hover{
-    transform: scale(1.02) translateY(-10px);
+    scale: 1.05;
+    translate: 10px;
     border: 2px solid #c11065;
     box-shadow: 2px 2px 12px 8px #c11065;
-    -webkit-transform: scale(1.02) translateY(-10px);
-    -moz-transform: scale(1.02) translateY(-10px);
-    -ms-transform: scale(1.02) translateY(-10px);
-    -o-transform: scale(1.02) translateY(-10px);
 }
 .event-card:nth-child(even){
     flex-direction: row-reverse;
